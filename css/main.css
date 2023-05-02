@@ -32,29 +32,6 @@
   opacity: 1;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 100px;
-}
-
-::-webkit-scrollbar:hover {
-  background-color: rgba(0, 0, 0, 0.09);
-}
-
-::-webkit-scrollbar-thumb:vertical {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 100px;
-  background-clip: padding-box;
-  border: 2px solid rgba(0, 0, 0, 0);
-  min-height: 10px;
-}
-
-::-webkit-scrollbar-thumb:vertical:active {
-  background: rgba(0, 0, 0, 0.61);
-  border-radius: 100px;
-}
-
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
   color: #000;
@@ -74,9 +51,13 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   overflow-x: hidden;
   opacity: 1;
+}
+
+img {
+  max-width: 100%;
 }
 
 .img-responsive {
@@ -85,4 +66,68 @@ body {
   height: auto;
 }
 
-/*# sourceMappingURL=main.css.map */
+/* btns */
+.btn_simple {
+  color: #722ED1;
+  border: 1px solid #722ED1;
+  font-weight: 600;
+  padding: 6px 34px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.btn_simple:hover {
+  background-color: #722ED1;
+  color: #fff;
+}
+
+/* btns */
+#header {
+  padding-top: 24px;
+}
+#header .inner_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#header .inner_header .logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+#header .inner_header .logo > img {
+  width: 100%;
+}
+#header .inner_header .right_side_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#header .inner_header .right_side_header .menu_top {
+  list-style-type: none;
+}
+#header .inner_header .right_side_header .menu_top > li {
+  display: inline-block;
+  margin-right: 40px;
+}
+#header .inner_header .right_side_header .menu_top > li > a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+#header .inner_header .right_side_header .menu_top > li > a:hover {
+  color: #722ED1;
+}/*# sourceMappingURL=main.css.map */
