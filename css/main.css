@@ -427,4 +427,15 @@ section.information .right_info > .descr {
           filter: grayscale(0);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#pre_footer .pf_info > h4 {
+  color: #160637;
+  font-weight: 900;
+  font-size: 38px;
+  text-align: center;
+}
+#pre_footer .pf_info > .line_img {
+  display: block;
+  margin: 42px auto;
 }/*# sourceMappingURL=main.css.map */
