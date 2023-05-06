@@ -272,11 +272,16 @@ section.information
 	background-image: url('/img/reviews/bg.svg')
 	.item_rev
 		text-align: center
+		display: none
+		animation: opac .8s
+		&.active
+			display: block
 		>.quotes
 			color: $dark_accent
 			font-size: 22px
 			margin: 0 auto 16px
 			max-width: 660px
+			height: 100px
 		>img
 			width: 80px
 			height: 80px
@@ -300,10 +305,10 @@ section.information
 			cursor: pointer
 			width: 16%
 			filter: grayscale(1)
-			transition: all .4s ease
+			transition: filter .4s ease
 			display: flex
 			align-items: center
 			justify-content: center
-			&:hover, &:active
+			&.active
 				filter: grayscale(0)
 				transform: scale(1.1)

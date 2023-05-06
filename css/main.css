@@ -358,12 +358,19 @@ section.information .right_info > .descr {
 }
 #reviews .item_rev {
   text-align: center;
+  display: none;
+  -webkit-animation: opac 0.8s;
+          animation: opac 0.8s;
+}
+#reviews .item_rev.active {
+  display: block;
 }
 #reviews .item_rev > .quotes {
   color: #160637;
   font-size: 22px;
   margin: 0 auto 16px;
   max-width: 660px;
+  height: 100px;
 }
 #reviews .item_rev > img {
   width: 80px;
@@ -401,8 +408,10 @@ section.information .right_info > .descr {
   width: 16%;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: -webkit-filter 0.4s ease;
+  transition: -webkit-filter 0.4s ease;
+  transition: filter 0.4s ease;
+  transition: filter 0.4s ease, -webkit-filter 0.4s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,7 +422,7 @@ section.information .right_info > .descr {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#reviews .nav_rev > div:hover, #reviews .nav_rev > div:active {
+#reviews .nav_rev > div.active {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   -webkit-transform: scale(1.1);
