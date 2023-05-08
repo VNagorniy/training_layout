@@ -758,4 +758,31 @@ section.information .right_info > .descr {
 .hamburger.is-active .line:nth-child(3) {
   -webkit-transform: translateY(-9px) rotate(-45deg);
           transform: translateY(-9px) rotate(-45deg);
+}
+
+.animate_graphic {
+  -webkit-animation: 1.5s infinite alternate movingAn;
+          animation: 1.5s infinite alternate movingAn;
+}
+
+@-webkit-keyframes movingAn {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes movingAn {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }/*# sourceMappingURL=main.css.map */
